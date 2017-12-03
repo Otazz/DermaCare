@@ -19,6 +19,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -258,22 +260,22 @@ public class MainActivity extends AppCompatActivity {
                             String msg;
                             if (score > 0.7)
                                 if(cla.equals("Melanoma Benigno"))
-                                    msg = "Foi classificado " + cla +
-                                            ". Está tudo tranquilo :)";
+                                    msg = "Não há indícios de um problema de pele " +
+                                            ". No entanto uma visita regular ao médico é recomendada";
                                 else
-                                    msg = "Foi classificado " + cla +
-                                        ". Recomenda-se a visita a um dermatologista.";
+                                    msg = "Suspeita de um problema de pele. " +
+                            "Recomenda-se a visita a um especialista.";
 
-                            else if(score > 0.5)
+                            /*else if(score > 0.5)
                                 msg = "Foi classicado como " + cla +
-                                        ", mas com uma porcentagem baixa.";
+                                        ", mas com uma porcentagem baixa.";*/
                             else
                                 msg = "Não há nenhuma patologia que foi destacada,"+
                                         " em caso de preocupação visite um dermatologista";
 
 
                             AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-                            alertDialog.setTitle("Alert");
+                            alertDialog.setTitle("Sr. Paciente");
                             alertDialog.setMessage(msg);
                             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                                     new DialogInterface.OnClickListener() {

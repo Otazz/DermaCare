@@ -123,10 +123,12 @@
         android:layout_width="299dp"
         android:layout_height="130dp"
         android:layout_marginTop="48dp"
+        android:src="@drawable/dermocare"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:color/background_light" />
+        app:srcCompat="@drawable/dermocare" />
 
 </android.support.constraint.ConstraintLayout>
