@@ -120,8 +120,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="299dp"
-        android:layout_height="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:src="@drawable/dermocare"
         android:visibility="visible"
