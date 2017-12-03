@@ -112,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        txt = (TextView) findViewById(R.id.t1);
         t2 = (TextView) findViewById(R.id.t2);
         bt = (Button) findViewById(R.id.button);
         b2 = (Button) findViewById(R.id.b2);

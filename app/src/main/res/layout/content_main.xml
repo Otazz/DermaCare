@@ -11,22 +11,6 @@
     tools:showIn="@layout/activity_main">
 
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="268dp"
-        android:layout_height="58dp"
-        android:text="Clique em um dos dois modos para diagnostico de pele."
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
-
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -34,7 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="228dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
@@ -81,13 +65,13 @@
         android:id="@+id/b2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Select From Gallery"
+        android:text="Selecionar Imagem"
         android:textColor="#FFFFFF"
 
 
@@ -102,7 +86,7 @@
         android:layout_width="226dp"
         android:layout_height="70dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:text="Não deixe de procurar um especialista em caso de duvida ou diagnostico negativo"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_dark"
@@ -120,15 +104,28 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="147dp"
         android:layout_marginTop="48dp"
-        android:src="@drawable/dermocare"
+        android:src="@drawable/dermo"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dermocare" />
+        app:srcCompat="@drawable/dermo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="324dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        app:srcCompat="@drawable/ppai" />
 
 </android.support.constraint.ConstraintLayout>
